@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/kembali"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Screen"
+        android:textSize="30dp"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppinsblack"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/second"
+        android:layout_height="1dp"
+        android:background="@color/blues"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_below="@+id/garis">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:fontFamily="@font/poppinsblack"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected User Name"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppinsblack"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/lanjut"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:background="@drawable/shape"
+        android:text="Choose a User"
+        android:textSize="20dp"
+        android:backgroundTint="@color/blues"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

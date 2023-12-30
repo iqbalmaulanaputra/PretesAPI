@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/kembali1"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/thrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Screen"
+        android:textSize="30dp"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppinsblack"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/thrid"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/blues"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/isianlist"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
